@@ -17,3 +17,8 @@ list = []
 tuple_list = [(i, 1, i, i**2, i**3, i**4, i**5) for i in range(11)]
 print(tuple_list)
 
+#4
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+flattened = [[name.upper(), name[:3].upper(), capital.upper()] for [(name, capital)] in countries]
+
+print(flattened)
